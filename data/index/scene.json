@@ -1,0 +1,90 @@
+{
+  "type": "scene",
+  "properties": {
+    "height": 55.96707818930041,
+    "width": 100.0,
+    "baseExtent": [
+      544227.7753368694,
+      4582208.705532603,
+      550867.4497262131,
+      4585924.737289602
+    ],
+    "crs": "EPSG:26718",
+    "proj": "+proj=utm +zone=18 +datum=NAD27 +units=m +no_defs",
+    "rotation": 0,
+    "wgs84Center": {
+      "lat": 41.40874838829047,
+      "lon": -74.43072981857014
+    },
+    "zExaggeration": 1.0,
+    "zShift": 0.0
+  },
+  "layers": [
+    {
+      "type": "layer",
+      "id": 0,
+      "properties": {
+        "name": "POLYGON",
+        "queryable": 1,
+        "visible": true,
+        "type": "polygon",
+        "objType": "Extruded"
+      },
+      "data": {
+        "materials": [
+          {
+            "type": 0,
+            "c": 16513087
+          },
+          {
+            "type": 2,
+            "c": 2302755
+          }
+        ],
+        "blocks": [
+          {
+            "url": "./data/index/L0_GEOM0.json"
+          }
+        ]
+      }
+    },
+    {
+      "type": "layer",
+      "id": 1,
+      "properties": {
+        "name": "cc43elu",
+        "queryable": 1,
+        "visible": true,
+        "type": "dem",
+        "shading": true
+      },
+      "data": [
+        {
+          "type": "block",
+          "layer": 1,
+          "block": 0,
+          "grid": {
+            "width": 268,
+            "height": 150,
+            "url": "./data/index/L1_DEM0.bin"
+          },
+          "width": 100.0,
+          "height": 55.96707818930041,
+          "translate": [
+            0.0,
+            0.0,
+            0
+          ],
+          "material": {
+            "type": 0,
+            "image": {
+              "url": "./data/index/L1_IMG0.png"
+            },
+            "ds": 1
+          },
+          "sides": true
+        }
+      ]
+    }
+  ]
+}
